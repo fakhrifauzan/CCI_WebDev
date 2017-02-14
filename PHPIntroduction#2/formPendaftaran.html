@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Form Input Mahasiswa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Form Pendaftaran Mahasiswa</h1>
+        <div id="data">
+            <table>
+                <form action="create.php" method="POST">
+                    <tr>
+                        <td>NIM</td>
+                        <td>:</td>
+                        <td><input type="number" maxlength="11" name="nim"></td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text" maxlength="100" name="nama"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" name="jeniskelamin" value="Laki-laki"> Laki-Laki <br>
+                            <input type="radio" name="jeniskelamin" value="Perempuan"> Perempuan <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td><input type="date" name="ttl"></td>
+                    </tr>
+                    <tr>
+                        <td>Fakultas</td>
+                        <td>:</td>
+                        <td>
+                            <select name="fakultas">
+                                <option value="Informatika">Informatika</option>
+                                <option value="Teknik Elektro">Teknik Elektro</option>
+                                <option value="Rekayasa Industri">Rekayasa Industri</option>
+                                <option value="Ekonomi & Bisnis">Ekonomi & Bisnis</option>
+                                <option value="Komunikasi & Bisnis">Komunikasi & Bisnis</option>
+                                <option value="Ilmu Terapan">Ilmu Terapan</option>
+                                <option value="Industri Kreatif">Industri Kreatif</option>
+                            </select>    
+                        </td>                            
+
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>:</td>
+                        <td><input type="text" maxlength="25" name="jurusan"></td>
+                    </tr>
+                    <tr>
+                        <td>Kelas</td>
+                        <td>:</td>
+                        <td><input type="text" maxlength="10" name="kelas"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><center><input type="submit" name="submit"><input type="reset" name="reset"></center></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </body>
+</html>
