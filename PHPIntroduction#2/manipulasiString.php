@@ -4,8 +4,8 @@
 	<title>Manipulasi String</title>
 </head>
 <body>
-	1. Menghitung jumlah karakter </br>
-	2. Kapital semua </br>
+	1. Menghitung jumlah karakter <br>
+	2. Kapital semua <br>
 	3. Huruf kecil semua <br>
 	4. Membalikan string <br>
 
@@ -22,7 +22,33 @@
 	</form>
 
 	<?php  
-		
+		if (isset($_POST['submit'])){
+			$string = $_POST['string'];
+			$pilihan = $_POST['pilihan'];
+
+			switch ($pilihan) {
+				case 1:
+					echo "Hasil output: ".strlen($string);
+					break;
+				
+				case 2:
+					echo "Hasil output: ".strtoupper($string);
+					break;
+				
+				case 3:
+					echo "Hasil output: ".strtolower($string);
+					break;
+				
+				case 4:
+					echo "Hasil output: ".strrev($string);
+					break;
+				
+				default:
+					echo "Error";
+					break;
+			}
+
+		}
 	?>
 </body>
 </html>
