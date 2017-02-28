@@ -48,7 +48,8 @@
 									<td>".$mhs['fakultas']."</td>
 									<td>".$mhs['jurusan']."</td>
 									<td>".$mhs['kelas']."</td>
-									<td><a href='edit.php?nim=$mhs[nim]'>Edit</a> | <a href='delete.php?nim=$mhs[nim]'>Delete</a> </td>
+									<td><a href='update.php?nim=$mhs[nim]'>Edit</a>
+									| <a href='delete.php?nim=$mhs[nim]'>Delete</a> </td>
 								</tr>
 							";
 						}
